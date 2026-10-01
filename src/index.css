@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --app-font-scale: 1;
+}
+
+/* Accessible focus outlines */
+*:focus-visible {
+  outline: 4px solid #166534 !important;
+  outline-offset: 3px !important;
+}
+
+/* Senior Font Size Variations */
+html.font-size-small {
+  font-size: 16px;
+}
+
+html.font-size-medium {
+  font-size: 18px;
+}
+
+html.font-size-large {
+  font-size: 21px; /* Senior-first default */
+}
+
+html.font-size-xl {
+  font-size: 25px;
+}
+
+/* High Contrast: Dark Mode */
+html.contrast-dark body {
+  background-color: #090D16 !important;
+  color: #F8FAFC !important;
+}
+
+html.contrast-dark .bg-senior-warm {
+  background-color: #090D16 !important;
+}
+
+html.contrast-dark .bg-white {
+  background-color: #162032 !important;
+  color: #F8FAFC !important;
+  border-color: #38BDF8 !important;
+}
+
+html.contrast-dark .text-slate-900,
+html.contrast-dark .text-slate-800,
+html.contrast-dark .text-slate-700 {
+  color: #F8FAFC !important;
+}
+
+html.contrast-dark .text-slate-600,
+html.contrast-dark .text-slate-500 {
+  color: #CBD5E1 !important;
+}
+
+/* High Contrast: Yellow on Black */
+html.contrast-yellow body {
+  background-color: #000000 !important;
+  color: #FEF08A !important;
+}
+
+html.contrast-yellow .bg-senior-warm {
+  background-color: #000000 !important;
+}
+
+html.contrast-yellow .bg-white {
+  background-color: #000000 !important;
+  color: #FEF08A !important;
+  border: 2px solid #FACC15 !important;
+}
+
+html.contrast-yellow .text-slate-900,
+html.contrast-yellow .text-slate-800,
+html.contrast-yellow .text-slate-700,
+html.contrast-yellow .text-slate-600,
+html.contrast-yellow .text-slate-500 {
+  color: #FEF08A !important;
+}
+
+html.contrast-yellow button {
+  border-color: #FACC15 !important;
+}
+
+/* Reduced Motion */
+html.reduced-motion * {
+  animation-duration: 0.001s !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001s !important;
+  scroll-behavior: auto !important;
+}
+
+/* Urdu Typography Enhancements */
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Urdu Typesetting', 'Amiri', Tahoma, sans-serif;
+  line-height: 2.1 !important;
+  letter-spacing: 0.01em;
+}
+
+.font-urdu button,
+.font-urdu h1,
+.font-urdu h2,
+.font-urdu h3,
+.font-urdu h4 {
+  line-height: 2.2 !important;
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

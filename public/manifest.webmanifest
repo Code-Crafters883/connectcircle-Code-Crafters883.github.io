@@ -1,0 +1,18 @@
+{
+  "name": "ConnectCircle",
+  "short_name": "ConnectCircle",
+  "description": "From Isolation to Interaction - Senior-First Accessible Social App",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDFBF7",
+  "theme_color": "#15803D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#166534" />
+      <stop offset="100%" stop-color="#15803D" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <!-- Background Rounded Circle -->
+  <rect width="512" height="512" rx="128" fill="#FDFBF7"/>
+  <circle cx="256" cy="256" r="210" fill="url(#circleGrad)" filter="url(#shadow)"/>
+  
+  <!-- Outer Connecting Heart & Hands Ring -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#FEF08A" stroke-width="14" stroke-dasharray="24 16"/>
+
+  <!-- Friendly Figures connected in circle -->
+  <!-- Center Heart -->
+  <path d="M256 340 C210 290 170 250 170 200 C170 165 198 140 230 140 C246 140 252 150 256 156 C260 150 266 140 282 140 C314 140 342 165 342 200 C342 250 302 290 256 340 Z" fill="#EF4444" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round"/>
+  
+  <!-- Senior / Family Figures Heads -->
+  <circle cx="256" cy="115" r="28" fill="#FFFFFF"/>
+  <circle cx="145" cy="256" r="28" fill="#FFFFFF"/>
+  <circle cx="367" cy="256" r="28" fill="#FFFFFF"/>
+  <circle cx="256" cy="397" r="28" fill="#FFFFFF"/>
+
+  <!-- Warm Smiles -->
+  <path d="M246 122 Q256 132 266 122" stroke="#15803D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M135 263 Q145 273 155 263" stroke="#15803D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M357 263 Q367 273 377 263" stroke="#15803D" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M246 404 Q256 414 266 404" stroke="#15803D" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>
